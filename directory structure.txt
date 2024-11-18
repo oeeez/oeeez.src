@@ -1,0 +1,145 @@
+oeeez-online/
+├── frontend/
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── (auth)/
+│   │   │   │   ├── login/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── register/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── layout.tsx
+│   │   │   ├── dashboard/
+│   │   │   │   └── page.tsx
+│   │   │   ├── marketplace/
+│   │   │   │   ├── [productId]/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── page.tsx
+│   │   │   ├── games/
+│   │   │   │   ├── [gameId]/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── page.tsx
+│   │   │   ├── banking/
+│   │   │   │   └── page.tsx
+│   │   │   ├── profile/
+│   │   │   │   └── page.tsx
+│   │   │   ├── admin/
+│   │   │   │   └── page.tsx
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx
+│   │   ├── components/
+│   │   │   ├── ui/
+│   │   │   │   ├── button.tsx
+│   │   │   │   ├── input.tsx
+│   │   │   │   ├── card.tsx
+│   │   │   │   └── ... (other shadcn/ui components)
+│   │   │   ├── layout/
+│   │   │   │   ├── Header.tsx
+│   │   │   │   ├── Footer.tsx
+│   │   │   │   └── Sidebar.tsx
+│   │   │   ├── auth/
+│   │   │   │   ├── LoginForm.tsx
+│   │   │   │   └── RegisterForm.tsx
+│   │   │   ├── marketplace/
+│   │   │   │   ├── ProductCard.tsx
+│   │   │   │   └── ProductList.tsx
+│   │   │   ├── games/
+│   │   │   │   ├── GameCard.tsx
+│   │   │   │   └── GameList.tsx
+│   │   │   └── banking/
+│   │   │       ├── TransactionList.tsx
+│   │   │       └── AccountSummary.tsx
+│   │   ├── lib/
+│   │   │   └── utils.ts
+│   │   ├── hooks/
+│   │   │   ├── useAuth.ts
+│   │   │   └── useApi.ts
+│   │   ├── services/
+│   │   │   ├── api.ts
+│   │   │   └── web3.ts
+│   │   └── styles/
+│   │       └── globals.css
+│   ├── public/
+│   │   ├── images/
+│   │   └── fonts/
+│   ├── next.config.js
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── tailwind.config.js
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   │   ├── database.ts
+│   │   │   └── env.ts
+│   │   ├── controllers/
+│   │   │   ├── authController.ts
+│   │   │   ├── userController.ts
+│   │   │   ├── contentController.ts
+│   │   │   ├── marketplaceController.ts
+│   │   │   ├── bankingController.ts
+│   │   │   └── gameController.ts
+│   │   ├── middleware/
+│   │   │   ├── authMiddleware.ts
+│   │   │   ├── errorMiddleware.ts
+│   │   │   └── validationMiddleware.ts
+│   │   ├── models/
+│   │   │   ├── User.ts
+│   │   │   ├── Content.ts
+│   │   │   ├── Product.ts
+│   │   │   ├── Payment.ts
+│   │   │   ├── Game.ts
+│   │   │   └── Transaction.ts
+│   │   ├── routes/
+│   │   │   ├── authRoutes.ts
+│   │   │   ├── userRoutes.ts
+│   │   │   ├── contentRoutes.ts
+│   │   │   ├── marketplaceRoutes.ts
+│   │   │   ├── bankingRoutes.ts
+│   │   │   └── gameRoutes.ts
+│   │   ├── services/
+│   │   │   ├── AuthService.ts
+│   │   │   ├── UserService.ts
+│   │   │   ├── ContentService.ts
+│   │   │   ├── MarketplaceService.ts
+│   │   │   ├── BankingService.ts
+│   │   │   └── GameService.ts
+│   │   ├── utils/
+│   │   │   ├── validation.ts
+│   │   │   ├── encryption.ts
+│   │   │   └── logger.ts
+│   │   └── app.ts
+│   ├── package.json
+│   └── tsconfig.json
+├── blockchain/
+│   ├── contracts/
+│   │   └── RADToken.sol
+│   ├── scripts/
+│   │   └── deploy.ts
+│   ├── test/
+│   │   └── RADToken.test.ts
+│   ├── hardhat.config.ts
+│   └── package.json
+├── tests/
+│   ├── unit/
+│   │   └── auth.test.ts
+│   ├── integration/
+│   │   └── api.test.ts
+│   └── e2e/
+│       └── auth.spec.ts
+├── scripts/
+│   ├── setup.sh
+│   ├── build.sh
+│   └── deploy.sh
+├── docs/
+│   ├── API.md
+│   ├── ARCHITECTURE.md
+│   └── DEPLOYMENT.md
+├── config/
+│   ├── next.config.js
+│   ├── tsconfig.json
+│   ├── .env.example
+│   ├── jest.config.js
+│   ├── .eslintrc.json
+│   └── .prettierrc
+├── .gitignore
+├── README.md
+└── package.json
